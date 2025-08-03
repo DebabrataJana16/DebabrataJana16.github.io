@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debabrata Jana - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark Blue-Gray Background */
+            color: #e5e7eb; /* Light Gray Text */
+        }
+        .glass-card {
+            background: rgba(31, 41, 55, 0.6); /* Semi-transparent dark gray */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+        }
+        .tag {
+            background-color: #374151; /* Gray-700 */
+            color: #d1d5db; /* Gray-300 */
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .accent-color {
+            color: #38bdf8; /* Sky Blue */
+        }
+        .btn-primary {
+            background-color: #38bdf8;
+            color: #111827;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0ea5e9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 glass-card shadow-lg shadow-black/20 mx-2 md:mx-4 lg:mx-6 mt-2">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold tracking-tight text-white">
+                <a href="#home">Debabrata Jana</a>
+            </h1>
+            <nav class="hidden md:flex space-x-6 text-base items-center">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
+                <a href="#education" class="hover:text-sky-400 transition-colors">Education</a>
+                <a href="#contact" class="bg-sky-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-sky-600 transition-all">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+            <a href="#about" class="block py-2 hover:text-sky-400">About</a>
+            <a href="#projects" class="block py-2 hover:text-sky-400">Projects</a>
+            <a href="#skills" class="block py-2 hover:text-sky-400">Skills</a>
+            <a href="#education" class="block py-2 hover:text-sky-400">Education</a>
+            <a href="#contact" class="block py-2 hover:text-sky-400">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <!-- Hero Section -->
+        <section id="home" class="min-h-[80vh] flex items-center">
+            <div class="w-full flex flex-col-reverse md:flex-row items-center justify-between gap-8">
+                <!-- Text Content -->
+                <div class="md:w-2/3 text-center md:text-left">
+                    <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white">
+                        Debabrata Jana
+                    </h2>
+                    <p class="mt-4 text-xl md:text-2xl font-medium text-gray-300">
+                        Bioinformatics Scientist & Statistical Programmer
+                    </p>
+                    <p class="mt-6 max-w-3xl mx-auto md:mx-0 text-gray-400 leading-relaxed">
+                        A passionate scientist leveraging skills in programming, statistics, and biotechnology to analyze complex biological data and drive scientific discovery.
+                    </p>
+                    <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                        <a href="https://www.linkedin.com/in/debabrata-jana-2a33b1185/" target="_blank" class="btn-primary font-bold py-3 px-6 rounded-full flex items-center space-x-2">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:debabrata.jana.ind@gmail.com" class="bg-gray-700 text-white font-bold py-3 px-6 rounded-full hover:bg-gray-600 transition-all flex items-center space-x-2">
+                             <i class="fas fa-envelope"></i>
+                             <span>Email Me</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Profile Picture -->
+                <div class="md:w-1/3 flex justify-center md:justify-end">
+                    <div class="w-64 h-64 md:w-80 md:h-80 relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-sky-400 to-indigo-600 rounded-full blur-xl opacity-70"></div>
+                        <img 
+                            src="C:\Users\debabrata\Desktop\Gemini_Generated_Image.png" 
+                            alt="Debabrata Jana" 
+                            class="relative w-full h-full rounded-full object-cover border-4 border-gray-600 shadow-lg"
+                            onerror="this.onerror=null;this.src='https://placehold.co/400x400/e2e8f0/111827?text=Error';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24">
+            <h3 class="text-3xl font-bold text-center mb-12 accent-color">About Me</h3>
+            <div class="glass-card p-8 md:p-12">
+                <p class="text-lg text-gray-300 leading-relaxed text-center">
+                    I am a Master's student in Biotechnology and Bioinformatics with a strong foundation in computer programming, statistics, and molecular biology. My career objective is to apply my analytical and technical skills in a challenging role as a Statistical Data Analyst, Clinical Data Scientist, or Bioinformatics Scientist. I am passionate about contributing to meaningful projects in a dynamic organization while continuously growing as a professional in this exciting and impactful field.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 md:py-24">
+            <h3 class="text-3xl font-bold text-center mb-12 accent-color">Research Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="glass-card p-6 flex flex-col h-full">
+                    <h4 class="text-xl font-bold text-white mb-2">Inter-kingdom Diversity Study of Rossmann Fold</h4>
+                    <p class="text-gray-400 mb-4 flex-grow">A postgraduate research project focused on visualizing protein topology to understand the diversity of the Rossmann fold across different biological kingdoms.</p>
+                    <div class="mt-auto">
+                        <span class="tag">Protein Topology</span>
+                        <span class="tag"> Structural Bioinformatics</span>
+                        <span class="tag">Research</span>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="glass-card p-6 flex flex-col h-full">
+                    <h4 class="text-xl font-bold text-white mb-2">Finding Inhibitors for Dengue Virus NSP5 Protein</h4>
+                    <p class="text-gray-400 mb-4 flex-grow">An undergraduate project utilizing molecular docking techniques to identify potential inhibitors for the NSP5 protein of the Dengue virus as a therapeutic strategy.</p>
+                    <div class="mt-auto">
+                        <span class="tag">Molecular Docking</span>
+                        <span class="tag">Drug Discovery</span>
+                        <span class="tag">Virology</span>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="glass-card p-6 flex flex-col h-full">
+                    <h4 class="text-xl font-bold text-white mb-2">Plasmid Copy Number Determination in E. Coli</h4>
+                    <p class="text-gray-400 mb-4 flex-grow">An internship project investigating how different stress conditions affect the plasmid copy number in E. coli (Strain-XL 1B), providing insights into bacterial adaptation.</p>
+                     <div class="mt-auto">
+                        <span class="tag">Microbiology</span>
+                        <span class="tag">Molecular Biology</span>
+                        <span class="tag">Stress Response</span>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="glass-card p-6 flex flex-col h-full">
+                    <h4 class="text-xl font-bold text-white mb-2">Review: Glioblastoma and Microglia Correlation</h4>
+                    <p class="text-gray-400 mb-4 flex-grow">Authored a comprehensive review article as part of undergraduate coursework, exploring the intricate relationship between glioblastoma and microglia in the tumor microenvironment.</p>
+                     <div class="mt-auto">
+                        <span class="tag">Oncology</span>
+                        <span class="tag">Immunology</span>
+                        <span class="tag">Scientific Writing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 md:py-24">
+            <h3 class="text-3xl font-bold text-center mb-12 accent-color">Technical Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Programming Skills -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-2xl accent-color mr-4"></i>
+                        <h4 class="text-xl font-bold text-white">Programming & Data</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><span class="font-semibold">Languages:</span> Python, R, C, C++, JAVA, SQL</li>
+                        <li><span class="font-semibold">Statistical Tools:</span> SAS, R Statistical Packages</li>
+                        <li><span class="font-semibold">Markup:</span> HTML, XML</li>
+                    </ul>
+                </div>
+                <!-- Bioinformatics Skills -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-dna text-2xl accent-color mr-4"></i>
+                        <h4 class="text-xl font-bold text-white">Bioinformatics</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><span class="font-semibold">Analysis:</span> Sequence Analysis, Phylogenetics, Hidden Markov Model</li>
+                        <li><span class="font-semibold">Structural:</span> Drug Designing, Docking, Homology Modelling, Energy Minimization</li>
+                        <li><span class="font-semibold">Tools:</span> BLAST, Discovery Studio, PyMol, GROMACS, AutoDock Vina, Modeller</li>
+                    </ul>
+                </div>
+                <!-- Omics Skills -->
+                <div class="glass-card p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-sitemap text-2xl accent-color mr-4"></i>
+                        <h4 class="text-xl font-bold text-white">Multi'Omics Data Analysis</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><span class="font-semibold">Genomics:</span> Genome Assembly, Gene Prediction and Annotation, Variant Calling</li>
+                        <li><span class="font-semibold">Transcriptomics:</span> Gene Expression Analysis using RNA-seq Data, Microarray Analysis</li>
+                        <li><span class="font-semibold">Metagenomics:</span> 16s rRNA Data Analysis, Clustering on the basis of Alignment/Composition, Phylogenetic Tree Building based on Alignment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-16 md:py-24">
+            <h3 class="text-3xl font-bold text-center mb-12 accent-color">Education</h3>
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-500 before:to-transparent">
+                    <!-- Item 1 -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                        <!-- Icon -->
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-700 text-sky-400 group-hover:bg-slate-600 transition-all shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <!-- Content -->
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-4 rounded-lg shadow-md">
+                            <!-- Title row: M.Sc in + Year -->
+                            <div class="flex justify-between items-start mb-1">
+                                <div class="font-bold text-white">M.Sc in</div>
+                                 <time class="font-caveat font-medium text-sky-400 whitespace-nowrap ml-4">2023–25</time>
+                            </div>
+                            <!-- Sub-title -->
+                            <div class="font-bold text-white -mt-1">Biotechnology & Bioinformatics</div>
+                            <!-- Institute -->
+                            <div class="text-gray-400 mt-1">Institute of Bioinformatics and Applied Biotechnology, Bengaluru</div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-700 text-sky-400 group-hover:bg-slate-600 transition-all shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-4 rounded-lg shadow-md">
+                            <div class="flex items-center justify-between space-x-2 mb-1">
+                                <div class="font-bold text-white">B.Sc (Hons.) in Microbiology</div>
+                                <time class="font-caveat font-medium text-sky-400">2020-23</time>
+                            </div>
+                            <div class="text-gray-400">Ramakrishna Mission Vidyamandira (University of Calcutta)</div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-700 text-sky-400 group-hover:bg-slate-600 transition-all shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-4 rounded-lg shadow-md">
+                            <div class="flex items-center justify-between space-x-2 mb-1">
+                                <div class="font-bold text-white">Higher Secondary Education</div>
+                                <time class="font-caveat font-medium text-sky-400">2018-20</time>
+                            </div>
+                            <div class="text-gray-400">Baranagar Ramakrishna Mission Ashrama High School</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="py-16 md:py-24">
+            <h3 class="text-3xl font-bold text-center mb-12 accent-color">Achievements</h3>
+             <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+                <div class="glass-card p-4">
+                    <p class="font-bold text-white">GATE-BT 2024</p>
+                    <p class="text-gray-400">AIR 550</p>
+                </div>
+                <div class="glass-card p-4">
+                    <p class="font-bold text-white">GATE-XL 2024</p>
+                    <p class="text-gray-400">AIR 620</p>
+                </div>
+                <div class="glass-card p-4">
+                    <p class="font-bold text-white">NIV Pune</p>
+                    <p class="text-gray-400">Cleared Admission Test</p>
+                </div>
+                <div class="glass-card p-4">
+                    <p class="font-bold text-white">GAT-B 2023</p>
+                    <p class="text-gray-400">Category Rank 123</p>
+                </div>
+                 <div class="glass-card p-4">
+                    <p class="font-bold text-white">JAM-BT 2023</p>
+                    <p class="text-gray-400">AIR 855</p>
+                </div>
+                <div class="glass-card p-4">
+                    <p class="font-bold text-white">TIFR-JGEEBILS 2023</p>
+                    <p class="text-gray-400">Cleared Written Test</p>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900/50 border-t border-gray-700/50 mt-16">
+        <div class="container mx-auto px-8 py-12 text-center">
+            <h3 class="text-2xl font-bold text-white mb-4">Get In Touch</h3>
+            <p class="text-gray-400 mb-8 max-w-lg mx-auto">
+                I'm currently seeking opportunities. Feel free to reach out via email or connect with me on LinkedIn.
+            </p>
+            <div class="flex justify-center space-x-6 text-3xl">
+                <a href="https://www.linkedin.com/in/debabrata-jana-2a33b1185/" target="_blank" class="text-gray-400 hover:text-sky-400 transition-colors">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:debabrata.jana.ind@gmail.com" class="text-gray-400 hover:text-sky-400 transition-colors">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                 <a href="tel:+919123815204" class="text-gray-400 hover:text-sky-400 transition-colors">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+            <p class="mt-10 text-sm text-gray-500">&copy; 2025 Debabrata Jana. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
